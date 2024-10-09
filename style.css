@@ -1,0 +1,61 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 150px;
+}
+
+body{
+    font-family: "Questrial", sans-serif;
+    max-width: 1200px;
+    margin: 100px auto;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.bento-grid-container{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    gap: 10px;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.card{
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card h2{
+    font-size: 2rem;
+}
+
+.card--lightYellow{
+    background-color: hsl(31, 66%, 93%);
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.card--lightYellow .purple{
+    color: hsl(256, 67%, 59%);
+}
+
+.card:nth-of-type(2) h2{
+    font-size:3rem;
+}
+
+.card--purple{
+    background: hsl(256, 67%, 59%);
+    color: #fff;
+    grid-column: 2/ 4 ;
+    text-align: center;
+}
+/* .card:nth-of-type(6) img{
+    width: 300px;
+} */
